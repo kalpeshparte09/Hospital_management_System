@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Generate Prescription</h1>
+        <a href="index.html">Back to Home</a>
+    </header>
+    <main>
+        <form action="generate_prescription.php" method="POST">
+            <h2>Create Prescription</h2>
+            <input type="number" name="appointment_id" placeholder="Appointment ID" required />
+            <input type="text" name="medicine" placeholder="Medicine" required />
+            <input type="text" name="dosage" placeholder="Dosage" required />
+            <input type="text" name="type" placeholder="Type" required />
+            <input type="number" name="duration_days" placeholder="Duration (Days)" required />
+            <input type="text" name="instructions" placeholder="Instructions" required />
+            <input type="text" name="manufacturer" placeholder="Manufacturer" required />
+            <input type="number" step="0.01" name="price" placeholder="Price" required />
+            <button type="submit">Generate Prescription</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hope Hospital Management.</p>
+    </footer>
+</body>
+</html>

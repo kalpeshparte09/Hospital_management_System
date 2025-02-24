@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Appointment Booking</h1>
+        <a href="index.html">Back to Home</a>
+    </header>
+    <main>
+        <form action="book_appointment.php" method="POST">
+            <h2>Book an Appointment</h2>
+            <input type="number" name="patient_id" placeholder="Patient ID" required />
+            <input type="number" name="doctor_id" placeholder="Doctor ID" required />
+            <input type="date" name="appointment_date" required />
+            <input type="text" name="reason" placeholder="Reason" required />
+            <input type="text" name="time_slot" placeholder="Time Slot" required />
+            <button type="submit">Book Appointment</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hope Hospital Management.</p>
+    </footer>
+</body>
+</html>
